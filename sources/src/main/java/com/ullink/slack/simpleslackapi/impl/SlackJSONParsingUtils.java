@@ -13,6 +13,13 @@ class SlackJSONParsingUtils {
         // Helper class
     }
 
+    /**
+     * buildSlackUser functions builds the properties for a slack user
+     *
+     * @return SlackUser
+     *
+     * CS427 Issue link: https://github.com/Itiviti/simple-slack-api /issues/196
+     */
     static SlackUser buildSlackUser(JsonObject jsonUser)
     {
         String id = GsonHelper.getStringOrNull(jsonUser.get("id"));

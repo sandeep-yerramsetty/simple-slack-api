@@ -12,6 +12,9 @@ import static org.junit.Assert.*;
 
 public class SlackPersonaImplTest {
 
+  /**
+   * CS427 Issue link: https://github.com/Itiviti/simple-slack-api /issues/196
+   */
   @Test
   public void testJsonSerialize() throws IOException {
     String statusText = "test_status";
